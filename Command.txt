@@ -1,0 +1,15 @@
+docker -v //show version
+docker ps -all //show running docker
+docker run hello-world
+docker run busy box ping google.com
+docker stop 0eadc39be868
+docker run busybox
+docker pull busybox
+docker create busybox ping google.com
+docker start <image ID>
+docker system prune 
+docker exec -it <container ID>
+docker rm <>
+docker run -p 8800:80 nginx
+docker images
+docker system df
