@@ -13,3 +13,21 @@ docker rm <>
 docker run -p 8800:80 nginx
 docker images
 docker system df
+
+
+
+
+
+----------------------------------
+โหลด image
+docker pull wordpress
+docker pull mysql:5.7
+docker pull phpmyadmin/phpmyadmin
+
+สร้าง network
+docker network create wordpress
+docker network ls
+docker network rm wordpress
+
+
+docker run --name pma --network wordpress -p 8888:80 -e PMA_ARBITRARY=1 -d phpmyadmin/phpmyadmin
